@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zhao Group - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+
+    <h1 class="header-title">
+      <a href="index.html">Zhao <span class="lab-text">Lab</span></a>
+    </h1>
+    <button class="hamburger">&#9776;</button>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="news.html">News</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Full-Width Hero Image Section -->
+  <section id="hero" class="hero-section">
+    <img src="Images/Home_2.jpg" alt="Group Photo" class="hero-image" />
+  </section>
+
+  <!-- Two-Column Section: Introduction & Research Highlights -->
+   
+  <section id="intro-highlights" class="section">
+    <div class="container two-column">
+      <!-- Introduction Column -->
+     <!-- Introduction Column -->
+<div class="intro">
+  <h2>Welcome to He Zhao Research Group</h2>
+  <p>
+    Our research is dedicated to discovering and engineering emergent quantum phenomena 
+    in quantum materials. We achieve this through the synthesis of 2D nanodevices using 
+    Molecular Beam Epitaxy (MBE) and exfoliation and co-lamination, followed by 
+    characterization via Spectroscopic Imaging-Scanning Tunneling Microscopy (SI-STM) 
+    and Spin-Polarized Scanning Tunneling Microscopy (SP-STM). Our primary focus is on 
+    exploring topological and correlated states in electron systems. 
+    <a href="research.html">Read more about our research.</a>
+  </p>
+</div>
+
+
+      <!-- Research Highlights Column -->
+      <div class="highlights">
+        <h2>Research Highlights</h2>
+        <div class="slideshow-container">
+          <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+
+          <div class="slide fade">
+            <img src="Images/Home/highlight1.jpg" alt="Highlight 1" class="highlight-image">
+            <p class="caption">Modulated SC gap in EuRbFe<sub>4</sub>As<sub>4</sub></p>
+            <p class="caption"><a href="https://www.nature.com/articles/s41586-023-06103-7" target="_blank">Nature 618, 940–945 (2023)</a></p>
+          </div>
+
+          <div class="slide fade">
+            <img src="Images/Home/highlight2.jpg" alt="Highlight 2" class="highlight-image">
+            <p class="caption">Moire lattice in bernal bilayer graphene</p>
+            <p class="caption"><a href="research.html" target="_blank">Read More in Research</a></p>
+          </div>
+
+          <div class="slide fade">
+            <img src="Images/Home/highlight3.jpg" alt="Highlight 3" class="highlight-image">
+            <p class="caption">Spin-polarized DOS modulation domains</p>
+            <p class="caption"><a href="https://www.nature.com/articles/s41567-019-0671-9" target="_blank">Nature Physics 15, 1267 (2019)</a></p>
+          </div>
+
+          <div class="slide fade">
+            <img src="Images/Home/highlight4.jpg" alt="Highlight 4" class="highlight-image">
+            <p class="caption">Epitaxially grown Bi<sub>2</sub>Ti<sub>3</sub> on Fe(Te,Se)</p>
+            <p class="caption"><a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.97.224504" target="_blank">Physical Review B 97, 224504 (2018)</a></p>
+          </div>
+
+          <div class="slide fade">
+            <img src="Images/Home/highlight5.jpg" alt="Highlight 5" class="highlight-image">
+            <p class="caption">Charge order and unidirectional quantum coherent state in CsV<sub>3</sub>Sb<sub>5</sub></p>
+            <p class="caption"><a href="https://www.nature.com/articles/s41586-021-03946-w" target="_blank">Nature 599, 216–221 (2021)</a></p>
+          </div>
+
+          <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      <!-- Join Us Section (Separate Row) -->
+    <section id="join-us" class="section">
+    <div class="container">
+        <h2>Join Us!</h2>
+        <p>We are looking for enthusiastic and motivated researchers to join our team at Florida State University!</p>
+        
+        <ul>
+          <li>Postdoctoral Position:<br> 
+              We currently have <strong>one open postdoc position</strong> focused on <strong>STM studies of interacting quantum materials</strong>, 
+              including single crystals and <strong>2D nanodevices</strong>.
+          </li>
+          <li>Graduate Students:<br> 
+              We have <strong>two openings</strong> for motivated graduate students interested in cutting-edge research on quantum materials.
+          </li>
+          <li>Undergraduate Students:<br> 
+              We are always looking for <strong>motivated undergraduate students</strong>, both at <strong>FSU and from other institutions</strong>, 
+              to participate in our research.
+          </li>
+        </ul>
+        <p>If you are interested in joining our group, please <strong>contact</strong>:  
+           <a href="mailto:hz24e@fsu.edu">hz24e@fsu.edu</a>. For more details about our team, visit our <a href="people.html">People Page</a>.</p>
+    </div>
+    </section>
+
+
+<!-- 🔹 Footer Section -->
+<footer>
+  <div class="container">
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>Office: 703-E Keen Building</p>
+      <p>Email: <a href="mailto:hz24e@fsu.edu">hz24e@fsu.edu</a></p>
+    </div>
+
+    <div class="footer-affiliation">
+      <p>&copy; 2025 Zhao Research Group. All rights reserved.</p>
+      <p>Florida State University</p>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
