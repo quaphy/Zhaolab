@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Join Us - Zhao Group</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1 class="header-title">
+      <a href="index.html">Zhao <span class="lab-text">Lab</span> @ FSU</a>
+    </h1>
+    <button class="hamburger">&#9776;</button>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="join.html" class="active">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ <!-- 🔹 Hero Image Section -->
+ <section class="hero-section">
+    <img src="Images/People_hero.png" alt="Research Overview" class="hero-image">
+  </section>
+
+
+   <!-- Join Us Section (Separate Row) -->
+   <section id="join-us" class="section">
+    <div class="container">
+        <h2>Openings</h2>
+        <ul>
+          <li>Postdoctoral Position:<br> 
+              We currently have <strong>one open postdoc position</strong> focused on <strong>STM studies of interacting quantum materials</strong>, 
+              including single crystals and <strong>2D nanodevices</strong>.
+          </li>
+          <li>Graduate Students:<br> 
+              We have <strong>two openings</strong> for motivated graduate students interested in cutting-edge research on quantum materials.
+          </li>
+          <li>Undergraduate Students:<br> 
+              We are always looking for <strong>motivated undergraduate students</strong>, both at <strong>FSU and from other institutions</strong>, 
+              to participate in our research.
+          </li>
+        </ul>
+       
+    </div>
+    </section>
+
+    <section class="section">
+        <div class="container join-container">
+          
+          <!-- Left: Contact Form -->
+          <div class="form-column">
+            <h3>Join Us</h3>
+            <p>If you are interested in joining or collaborating with our group, please <strong>contact</strong>:  
+                <a href="mailto:hzhao7@fsu.edu">hzhao7@fsu.edu</a> or leave a message</a>.</p>
+      
+            <form id="joinForm">
+              <label for="name">Name:</label><br>
+              <input type="text" id="name" name="name" required><br><br>
+      
+              <label for="email">Contact information (email):</label><br>
+              <input type="email" id="email" name="email" required><br><br>
+      
+              <label for="interest">Research/Collaboration interest:</label><br>
+              <textarea id="interest" name="interest" rows="5" required></textarea><br><br>
+      
+              <button type="submit">Submit</button>
+            </form>
+      
+            <div id="status"></div>
+          </div>
+      
+          <!-- Right: Google Map -->
+          <div class="map-column">
+            <h3>Location</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1847.4698116691375!2d-84.30378332734108!3d30.445940516473982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88ecf57224e1565f%3A0x7e89cd112b85ccf4!2sFlorida%20State%20University%20Department%20of%20Physics!5e1!3m2!1sen!2sus!4v1743009843436!5m2!1sen!2sus"
+              width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+      
+        </div>
+      </section>
+      
+
+  <script src="script.js"></script>
+  <script src="join.js"></script> <!-- this is where form submission happens -->
+</body>
+</html>

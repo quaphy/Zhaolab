@@ -128,6 +128,14 @@ header {
   }
 }
 
+.nav-list a.active {
+  color: #ffcc00; /* or any color you want to highlight */
+  /*border-bottom: 2px solid #ffcc00; /* optional underline effect*/ 
+}
+
+
+
+
 /* Container for center alignment and padding */
 .container {
   max-width: 1200px;
@@ -343,7 +351,7 @@ footer a:hover {
     flex-shrink: 0;
   }
   .hero-section {
-    margin-top: 40px; /* Hero picture position */
+    margin-top: 60px; /* Hero picture position */
     padding-top: 0px;
   }
   /* Show the hamburger button on small screens */
@@ -355,14 +363,14 @@ footer a:hover {
   nav {
     position: fixed;
     top: 0;
-    left: 100%;  /* Move off-screen */
+    right: -150px;
     width: 110px;
-    height: 250px;
+    height: auto;
     background:#222;
     padding-top: 60px; /*toggle list position*/
     padding-left: 0px;
     z-index: 500;
-  }
+      }
 
   /* Stack the navigation links in a column */
   .nav-list {
@@ -376,9 +384,39 @@ footer a:hover {
   }
 
   /* Slide menu in when 'open' class is added */
-  nav.open {
-    left: 0;
+  @media (max-width: 900px) {
+    nav {
+      position: fixed;
+      top: 0;
+      right: -150px; /* 🔹 Hide off-screen by default */
+      width: 150px;
+      height: auto;
+      background: #222;
+      padding-top: 60px;
+      z-index: 500;
+      transition: right 0.3s ease; /* 🔹 Smooth slide-in */
+     }
+  
+    nav.open {
+      right: 0; /* 🔹 Slide in when .open is added */
+    }
+  
+    .nav-list {
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    .nav-list a {
+      display: block;
+      font-size: 16px;
+      padding: 5px;
+    }
+  
+    .hamburger {
+      display: block;
+    }
   }
+  
 }
 
 
@@ -739,9 +777,32 @@ footer a:hover {
     padding: 15px;
   }
 }
-
-
-
 /* Facilities page style end*/
 
 
+/* Two-column layout for join us page */
+.join-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.form-column, .map-column {
+  flex: 1 1 45%;
+  min-width: 300px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .join-container {
+    flex-direction: column;
+  }
+
+  .form-column, .map-column {
+    width: 100%;
+  }
+}
+/* join us page end*/
