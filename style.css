@@ -537,9 +537,16 @@ footer a:hover {
     grid-template-columns: 1fr;
   }
 }
-.section {
-  padding-bottom: 40px;  /* adjust: 60–120px */
+/* Section underline */
+.ug-grid {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 30px;  /* space before the divider */
+  margin-bottom: 40px;   /* space after the divider */
 }
+.section {
+  padding-bottom: 50px;  /* adjust: 60–120px */
+}
+
 
 /* People page style end */
 
