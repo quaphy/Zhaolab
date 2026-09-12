@@ -783,10 +783,13 @@ footer a:hover {
 }
 
 .equipment-image {
-  width: 450px; /* Set a fixed width */
-  height: 400px; /* Set a fixed height */
-  object-fit: cover; /* Crops the image while maintaining aspect ratio */
-  border-radius: 5px; /* Optional: Keeps rounded corners */
+  width: 100%;
+  max-width: 580px;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
 }
 
 
@@ -816,8 +819,9 @@ footer a:hover {
   }
   @media (max-width: 900px) {
     .equipment-image {
-      width: 300px; /* Slightly smaller for mobile */
-      height: 300px; /* Keep proportions */
+      width: 100%;
+      max-width: 580px;
+      aspect-ratio: 3 / 2;
     }
   }
   
